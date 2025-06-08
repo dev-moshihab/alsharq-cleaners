@@ -1,0 +1,117 @@
+/* App.css */
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f4faff;
+  color: #003366;
+}
+
+.page {
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1.2s ease-in-out;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.page.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+p, li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: square;
+  padding: 0;
+}
+
+/* زر العودة للأعلى */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.2);
+  display: none;
+  z-index: 1000;
+}
+
+.back-to-top.visible {
+  display: block;
+}
+
+/* دخول ناعم */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+
+  .page {
+    padding: 60px 15px;
+  }
+}
+/* زر واتساب عائم */
+
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  left: 30px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+  
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  
+}
+
+.whatsapp-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
