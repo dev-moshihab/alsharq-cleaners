@@ -1,0 +1,95 @@
+.page-container {
+    background-color: #eaf6ff;
+    min-height: 100vh;
+    padding: 50px 20px;
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.badge-new {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.product-image-section {
+    flex: 1;
+    background-color: #f7faff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 15px;
+}
+
+.product-info-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.features-list li::before {
+    content: "✔️";
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.btn-contact {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}

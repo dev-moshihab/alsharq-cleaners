@@ -1,0 +1,123 @@
+.hero-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0 5%;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  transition: filter 1s ease;
+  min-height: 400px;
+}
+
+/* طبقة التغبيش التدريجي */
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0);
+  transition: backdrop-filter 2s ease, background-color 2s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-slide.blurred::before {
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.heroSwiper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  direction: rtl;
+}
+
+.hero-left {
+  position: relative;
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero-circle {
+  position: absolute;
+  width: 80vmin;
+  height: 80vmin;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  z-index: 1;
+  animation: circleExpand 1.5s ease-out;
+}
+
+@keyframes circleExpand {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.hero-img {
+  z-index: 2;
+  width: 320px;
+  animation: imgZoom 1.5s ease-out;
+  align-self: center;
+}
+
+@keyframes imgZoom {
+  from { transform: scale(0.6); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.hero-text {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  z-index: 2;
+  max-width: 35%;
+  text-align: right;
+  animation: fadeUp 1.2s ease-out;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-text h2,
+.hero-text p {
+  font-family: 'Cairo', sans-serif;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: .8rem;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: .7rem 2rem;
+  border-radius: 25px;
+  transition: .3s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000000;
+}

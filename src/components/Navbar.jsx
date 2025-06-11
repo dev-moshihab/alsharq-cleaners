@@ -1,32 +1,24 @@
 // Navbar.js
 import "./Navbar.css";
+import { FaHome, FaPhone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar glass-navbar">
       <div className="logo">
-        <a href="#home">
-          <img
-            src="https://i.postimg.cc/Bb6NpHTv/image.png"
-            width="300"
-            alt="الشعار"
-          />
+        <a href="/">
+          <img src="https://i.postimg.cc/Bb6NpHTv/image.png" alt="الشعار" />
         </a>
       </div>
-      <ul className="nav-links">
-        <li>
-          <a href="#home">الرئيسية</a>
-        </li>
-        <li>
-          <a href="#about">من نحن</a>
-        </li>
-        <li>
-          <a href="#products">منتجاتنا</a>
-        </li>
-        <li>
-          <a href="#contact">اتصل بنا</a>
-        </li>
-      </ul>
+      <div className="nav-container">
+        <Link to="/" className="nav-link">
+          <FaHome className="icon" /> الرئيسية
+        </Link>
+        <a href="#contact" className="nav-link">
+          <FaPhone className="icon" /> معلومات الاتصال
+        </a>
+      </div>
     </nav>
   );
 }
