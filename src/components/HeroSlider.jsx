@@ -12,14 +12,14 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    bg: "https://i.ibb.co/6cGCt0m4/oliur-ovr-OPhu8v-Sw-unsplash-1.jpg",
-    img: "https://i.ibb.co/LzSYF89s/IMG-20250611-151215.png",
+    bg: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1749662943/oliur-ovrOPhu8vSw-unsplash_1_ap3yni.jpg",
+    img: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1749663072/IMG_20250611_151215_sipwok.png",
     title: "تابلو-راي",
     subtitle: "سر اللمعان يحيي لون وتفاصيل التابلو، جربه اليوم وشاهد الفرق بنفسك.",
     link: "/TabluRay",
   },
   {
-    bg: "https://i.ibb.co/6cGCt0m4/oliur-ovr-OPhu8v-Sw-unsplash-1.jpg",
+    bg: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1749662943/oliur-ovrOPhu8vSw-unsplash_1_ap3yni.jpg",
     img: "",
     title: "منتج جديد",
     subtitle: "عناية فائقة للملابس البيضاء",

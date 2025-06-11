@@ -1,9 +1,7 @@
-/* تأثير زجاجي */
+/* تأثير زجاجي احترافي */
 .glass-navbar {
-  
   position: sticky;
   top: 0;
-
   z-index: 1000;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
@@ -13,18 +11,21 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid rgba(0, 128, 255, 0.1);
+  direction: rtl; /* لأن التصميم باللغة العربية */
 }
 
+/* شعار */
 .logo img {
   height: 80px;
 }
 
+/* روابط التنقل */
 .nav-container {
-  
   display: flex;
   gap: 30px;
 }
 
+/* رابط فردي */
 .nav-link {
   font-family: 'Cairo', sans-serif;
   display: flex;
@@ -37,11 +38,13 @@
   position: relative;
 }
 
+/* أيقونة */
 .nav-link .icon {
   margin-left: 6px;
   color: #00b894; /* أخضر ناعم */
 }
 
+/* تأثير hover */
 .nav-link:hover {
   color: #004080;
   transform: translateY(-2px);
@@ -62,22 +65,28 @@
   width: 100%;
 }
 
-/* Responsive */
+/* ✅ استجابة ذكية بدون تغيير التنسيق */
 @media (max-width: 768px) {
   .glass-navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px 20px;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-    padding-top: 10px;
   }
 
   .logo img {
     height: 60px;
+  }
+
+  .nav-container {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .nav-link .icon {
+    font-size: 1.1rem;
+    margin-left: 4px;
   }
 }

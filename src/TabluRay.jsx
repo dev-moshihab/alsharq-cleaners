@@ -9,7 +9,7 @@ export default function TabluRay() {
         <div className="product-image-section">
           <img
             className="product-image"
-            src="https://i.ibb.co/My0s72Mq/IMG-20250611-154057-1.png"
+            src="https://res.cloudinary.com/dbh3tvotn/image/upload/v1749662837/IMG_20250611_154057_1_lu9smz.png"
             alt="تابلو راي"
           />
         </div>
