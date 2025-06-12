@@ -1,5 +1,5 @@
 export default function NewProduct(){
     return(<>
-    <h1>NewProduct</h1>
+    <h1>NewProduct02</h1>
     </>);
 }
