@@ -73,8 +73,13 @@
     padding: 10px 20px;
   }
 
+  .p1{
+    font-size: 0.9rem;
+  }
+
   .logo img {
-    height: 60px;
+    
+    height: 55px;
   }
 
   .nav-container {
@@ -86,7 +91,7 @@
   }
 
   .nav-link .icon {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-left: 4px;
   }
 }

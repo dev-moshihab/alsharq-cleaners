@@ -15,10 +15,10 @@ function Navbar() {
       </div>
       <div className="nav-container">
         <Link to="/" className="nav-link">
-          <FaHome className="icon" /> الرئيسية
+          <FaHome className="icon" /> <p className="p1">الرئيسية</p>
         </Link>
         <a href="#contact" className="nav-link">
-          <FaPhone className="icon" /> معلومات الاتصال
+          <FaPhone className="icon" />  <p className="p1">معلومات الاتصال</p>
         </a>
       </div>
     </nav>
