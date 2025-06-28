@@ -138,8 +138,8 @@
   }
 
   .hero-circle {
-    width: 70vw;
-    height: 70vw;
+    width: 80vw;
+    height: 80vw;
   }
 
   .hero-img {
@@ -152,6 +152,7 @@
     text-align: center;
     padding: 0 1rem;
     margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 
   .hero-text h2 {
