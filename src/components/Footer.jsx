@@ -29,7 +29,7 @@ function Footer() {
           <h3>معلومات التواصل</h3>
 
           <p>
-            <FaLocationDot className="icon0" /> سوريا - ريف دمشق{" "}
+            <FaLocationDot className="icon0" /> سوريا {" "}
           </p>
           <p>
             <FaPhoneFlip className="icon0" /> <tel>0947519598</tel>{" "}
