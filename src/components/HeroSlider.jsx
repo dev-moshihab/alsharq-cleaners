@@ -22,7 +22,7 @@ const slides = [
     bg: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1749662943/oliur-ovrOPhu8vSw-unsplash_1_ap3yni.jpg",
     img: "",
     title: "منتج جديد",
-    subtitle: "عناية فائقة للملابس البيضاء",
+    subtitle: "احلى جو",
     link: "/NewProduct",
   },
 ];
