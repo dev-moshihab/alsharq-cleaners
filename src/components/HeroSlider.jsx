@@ -8,22 +8,21 @@ import "swiper/css/effect-fade";
 import "./HeroSlider.css";
 import { Link } from "react-router-dom";
 
-
-
 const slides = [
   {
     bg: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1749662943/oliur-ovrOPhu8vSw-unsplash_1_ap3yni.jpg",
     img: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1749663072/IMG_20250611_151215_sipwok.png",
     title: "تابلو-راي",
-    subtitle: "سر اللمعان يحيي لون وتفاصيل التابلو، جربه اليوم وشاهد الفرق بنفسك.",
+    subtitle:
+      "سر اللمعان يحيي لون وتفاصيل التابلو، جربه اليوم وشاهد الفرق بنفسك.",
     link: "/TabluRay",
   },
   {
-    bg: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1749662943/oliur-ovrOPhu8vSw-unsplash_1_ap3yni.jpg",
-    img: "",
-    title: "منتج جديد",
-    subtitle: "احلى جو",
-    link: "/NewProduct",
+    bg: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1758215343/Gemini_Generated_Image_bz0w1xbz0w1xbz0w_yyruip.png",
+    img: "https://res.cloudinary.com/dbh3tvotn/image/upload/v1758036101/IMG_20250916_181355_1_tsao5m.png",
+    title: " احلى جو",
+    subtitle: " معطر الجو الفاخر بروائح منعشة ومتنوعة",
+    link: "/AhlaJaw",
   },
 ];
 
@@ -54,7 +53,9 @@ function HeroSlider() {
       {slides.map((s, i) => (
         <SwiperSlide key={i}>
           <div
-            className={`hero-slide ${activeIndex === i && blurActive ? "blurred" : ""}`}
+            className={`hero-slide ${
+              activeIndex === i && blurActive ? "blurred" : ""
+            }`}
             style={{ backgroundImage: `url('${s.bg}')` }}
           >
             <div className="hero-left">
@@ -64,7 +65,9 @@ function HeroSlider() {
             <div className="hero-text">
               <h2>{s.title}</h2>
               <p>{s.subtitle}</p>
-              <Link to={s.link} className="btn">استعراض</Link>
+              <Link to={s.link} className="btn">
+                استعراض
+              </Link>
             </div>
           </div>
         </SwiperSlide>

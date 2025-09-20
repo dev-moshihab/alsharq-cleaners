@@ -15,10 +15,10 @@ function Footer() {
               <a href="#home">الرئيسية</a>
             </li>
             <li>
-              <Link to="/TabluRay">TabluRay</Link>
+              <Link to="/TabluRay">تابلو راي</Link>
             </li>
             <li>
-              <Link to="/NewProduct">NewProduct</Link>
+              <Link to="/AhlaJaw">احلى جو</Link>
             </li>
             <li>
               <a href="#contact">معلومات الاتصال</a>

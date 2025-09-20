@@ -11,6 +11,7 @@ function Navbar() {
       <div className="logo">
         <a href="/">
           <img src="https://res.cloudinary.com/dbh3tvotn/image/upload/v1749662267/%D8%B4%D8%B1%D9%83%D8%A9_ak03rx.png" alt="الشعار" />
+          {/* <img src="https://res.cloudinary.com/dbh3tvotn/image/upload/v1758034541/Screenshot_2025-09-16_175018_oskp0k.png" alt="الشعار" /> */}
         </a>
       </div>
       <div className="nav-container">

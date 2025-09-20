@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import HeroSlider from "./components/HeroSlider";
 import { Route, Routes } from "react-router-dom";
 import TabluRay from "./TabluRay";
-import NewProduct from "./NewProduct";
+import AhlaJaw from "./AhlaJaw";
 
 function App() {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -57,7 +57,7 @@ function App() {
 
 
         <Route path="/TabluRay" element={<TabluRay/>} ></Route>
-        <Route path="/NewProduct" element={<NewProduct/>} ></Route>
+        <Route path="/AhlaJaw" element={<AhlaJaw/>} ></Route>
       </Routes>
       <Footer />
     </>

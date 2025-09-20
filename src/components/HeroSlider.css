@@ -31,7 +31,6 @@
 }
 
 .heroSwiper {
-  
   height: 100vh;
   position: relative;
   direction: rtl;
@@ -58,8 +57,14 @@
 }
 
 @keyframes circleExpand {
-  from { transform: scale(0); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .hero-img {
@@ -70,8 +75,14 @@
 }
 
 @keyframes imgZoom {
-  from { transform: scale(0.6); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .hero-text {
@@ -83,22 +94,28 @@
   text-align: right;
   animation: fadeUp 1.2s ease-out;
   color: #fff;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-text h2,
 .hero-text p {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .hero-text h2 {
   font-size: 2.8rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 .hero-text p {
@@ -110,9 +127,9 @@
   display: inline-block;
   border: 2px solid #fff;
   color: #fff;
-  padding: .7rem 2rem;
+  padding: 0.7rem 2rem;
   border-radius: 25px;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
   font-weight: bold;
 }

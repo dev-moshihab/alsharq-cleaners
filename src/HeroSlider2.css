@@ -1,0 +1,21 @@
+.hero-slide2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.heroSwiper2 {
+  width: 450px;
+  height: 600px;
+
+  /* بوردر أنيق حول السلايدر */
+  border: 4px solid rgba(255, 255, 255, 0.8); /* بوردر شبه شفاف */
+  border-radius: 10px; /* حواف مستديرة */
+
+  /* ظل لطيف لإبراز السلايدر */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
